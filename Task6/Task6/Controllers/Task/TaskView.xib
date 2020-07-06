@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskViewController">
+            <connections>
+                <outlet property="appleHeightConstraint" destination="MhE-vn-6NA" id="Shw-In-kXi"/>
+                <outlet property="appleLogo" destination="NUm-M2-kJc" id="cxU-Bv-36c"/>
+                <outlet property="appleLogoLeading" destination="xun-jA-CfH" id="pA2-mU-4wu"/>
+                <outlet property="appleTopConstraint" destination="nC2-uc-Mnn" id="7ZV-xW-tya"/>
+                <outlet property="appleWidthConstraint" destination="HO9-cP-pck" id="Y7B-YG-weJ"/>
+                <outlet property="bottomLineView" destination="tKM-tr-ntE" id="bzD-Im-3bL"/>
+                <outlet property="gitButton" destination="yeF-M3-Xco" id="MZm-Fj-ECM"/>
+                <outlet property="stackView" destination="P0K-MS-8WA" id="9V2-q0-EJk"/>
+                <outlet property="startButton" destination="Bpm-T7-CBE" id="fBl-Gm-mbf"/>
+                <outlet property="topLineLeading" destination="rYf-U4-HKb" id="eod-Ft-gIU"/>
+                <outlet property="topLineTrailing" destination="dBb-gQ-zgg" id="eYr-QB-v3D"/>
+                <outlet property="topLineView" destination="5Kw-nf-lh3" id="bnd-PJ-IQS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="l4v-2Y-kL8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.logo" translatesAutoresizingMaskIntoConstraints="NO" id="NUm-M2-kJc">
+                    <rect key="frame" x="50" y="65" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="HO9-cP-pck"/>
+                        <constraint firstAttribute="height" constant="100" id="MhE-vn-6NA"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="P0K-MS-8WA">
+                    <rect key="frame" x="178" y="68.5" width="80.5" height="93.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My iPhone" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zu2-tl-vSD">
+                            <rect key="frame" x="0.0" y="0.0" width="80.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9In-J2-1Lh">
+                            <rect key="frame" x="0.0" y="36.5" width="80.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS 13.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-eB-K2C">
+                            <rect key="frame" x="0.0" y="73" width="80.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kw-nf-lh3">
+                    <rect key="frame" x="50" y="185" width="314" height="3"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="zbx-A1-ovF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tKM-tr-ntE">
+                    <rect key="frame" x="50" y="446" width="314" height="3"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="R3E-np-Xeh"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="1Gg-U3-XWY"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yeF-M3-Xco">
+                    <rect key="frame" x="175" y="455" width="46" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bpm-T7-CBE">
+                    <rect key="frame" x="175" y="518" width="46" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Kw-nf-lh3" secondAttribute="trailing" constant="50" id="dBb-gQ-zgg"/>
+                <constraint firstItem="5Kw-nf-lh3" firstAttribute="top" secondItem="NUm-M2-kJc" secondAttribute="bottom" constant="20" id="fAt-bu-hac"/>
+                <constraint firstItem="P0K-MS-8WA" firstAttribute="leading" secondItem="NUm-M2-kJc" secondAttribute="trailing" constant="28" id="jcU-yL-YZE"/>
+                <constraint firstItem="NUm-M2-kJc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="21" id="nC2-uc-Mnn"/>
+                <constraint firstItem="P0K-MS-8WA" firstAttribute="centerY" secondItem="NUm-M2-kJc" secondAttribute="centerY" id="qrM-O2-E6q"/>
+                <constraint firstItem="5Kw-nf-lh3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="rYf-U4-HKb"/>
+                <constraint firstItem="NUm-M2-kJc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="xun-jA-CfH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-24.637681159420293" y="152.00892857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple.logo" width="803" height="985"/>
+    </resources>
+</document>
